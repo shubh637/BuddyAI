@@ -11,8 +11,7 @@ import openai
 load_dotenv()
 
 # Access the API keys from the environment variables
-API_KEY = os.getenv("api_key")  # OpenAI API key
-
+API_KEY = os.getenv("api_key")
 def say(text):
     """Convert text to speech."""
     engine = pyttsx3.init()
@@ -43,8 +42,8 @@ def ask_openrouter(query):
     url = "https://openrouter.ai/api/v1/chat/completions"
     headers = {
         "Authorization": f"Bearer {API_KEY}",
-        "HTTP-Referer": "https://example.com",  # Optional. Replace with your site URL.
-        "X-Title": "My App",  # Optional. Replace with your site name.
+        "HTTP-Referer": "https://example.com",  
+        "X-Title": "My App", 
     }
     data = {
         "model": "deepseek/deepseek-r1:free",  # Use the DeepSeek model
