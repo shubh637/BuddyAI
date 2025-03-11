@@ -16,8 +16,6 @@ response = requests.post(
     url="https://openrouter.ai/api/v1/chat/completions",
     headers={
         "Authorization": f"Bearer {apikey}",
-        "HTTP-Referer": "https://example.com",  # Optional. Replace with your site URL.
-        "X-Title": "My App",  # Optional. Replace with your site name.
     },
     json={
         "model": "deepseek/deepseek-r1:free",  # Use the DeepSeek model
