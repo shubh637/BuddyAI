@@ -41,9 +41,7 @@ def ask_openrouter(query):
     """Get responses from OpenRouter API using DeepSeek model."""
     url = "https://openrouter.ai/api/v1/chat/completions"
     headers = {
-        "Authorization": f"Bearer {API_KEY}",
-        "HTTP-Referer": "https://example.com",  
-        "X-Title": "My App", 
+        "Authorization": f"Bearer {API_KEY}", 
     }
     data = {
         "model": "deepseek/deepseek-r1:free",  # Use the DeepSeek model
